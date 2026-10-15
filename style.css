@@ -1,0 +1,288 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #2c3e50;
+  background: linear-gradient(135deg, #291f94 0%, #241f7b 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* ===== Container utama ===== */
+.page-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: rgba(248, 153, 46, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+/* ===== Header ===== */
+.main-header {
+  text-align: center;
+  padding: 30px 20px 10px;
+}
+
+.header-content h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.header-content p {
+  margin: 0;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.content-wrapper {
+  padding: 20px;
+}
+
+/* ===== Section / kartu ===== */
+section {
+  background: #ffffff;
+  border-left: 4px solid #000000;
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  margin: 0 0 16px;
+  padding-bottom: 8px;
+  font-size: 1.2rem;
+  color: #2980b9;
+  border-bottom: 2px solid #3498db;
+}
+
+h3 {
+  margin: 20px 0 10px;
+  font-size: 1rem;
+  color: #2980b9;
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+ul,
+ol {
+  padding-left: 22px;
+  margin: 8px 0 14px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+a {
+  color: #3498db;
+}
+
+/* ===== Kotak info (Key Points, Structure Breakdown, dll) ===== */
+.key-points,
+.info-box,
+.highlight-box,
+.tips {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  border-left: 4px solid #3498db;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 16px 0;
+}
+
+/* ===== Blok kode ===== */
+pre,
+.code-block {
+  position: relative;
+  background: #2c3e50;
+  color: #ecf0f1;
+  font-family: "Courier New", monospace;
+  font-size: 0.8rem;
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 16px 0;
+  line-height: 1.5;
+}
+
+pre::after,
+.code-block::after {
+  content: "HTML";
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #e74c3c;
+  color: white;
+  font-size: 0.6rem;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+code {
+  font-family: "Courier New", monospace;
+  background: #ecf0f1;
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+/* ===== Tabel ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  margin: 16px 0;
+}
+
+thead {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 12px 14px;
+  font-size: 0.85rem;
+}
+
+tbody tr {
+  border-bottom: 1px solid #ecf0f1;
+}
+
+tbody tr:hover {
+  background: #f8f9fa;
+}
+
+/* ===== Area contoh langsung (Live Examples / Try this form) ===== */
+.demo,
+.live-example,
+.example-box,
+.demo-box {
+  background: #f8f9fa;
+  border: 2px dashed #3498db;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 16px 0;
+}
+
+/* ===== Form ===== */
+form {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+label {
+  display: block;
+  margin: 10px 0 4px;
+  font-size: 0.85rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.85rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+button,
+input[type="submit"] {
+  width: auto;
+  margin-top: 14px;
+  padding: 9px 18px;
+  background: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background: #1f6391;
+}
+
+/* ===== Latihan (Practice Exercises) ===== */
+.practice,
+.exercises,
+.practice-section {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+  border-left: none;
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+/* ===== Penutup (Congratulations) ===== */
+.congratulations,
+.congrats,
+.footer-message,
+footer {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 10px;
+}
+
+footer h2,
+.congratulations h2,
+.congrats h2 {
+  color: white;
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+/* ===== Responsif ===== */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  section {
+    padding: 16px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+}
